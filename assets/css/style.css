@@ -83,6 +83,10 @@
         width: 20rem;
     }
 
+    .datas__textos{
+        padding-top: 32px;
+    }
+
     .datas__textos h2, p{
         color: white;
         font-family: var(--fonte-textos);
@@ -90,13 +94,13 @@
     }
     
     .datas__textos h2{
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 700;
         line-height: 10px;
     }
     
     .datas__textos p{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
         line-height: 40px;
     }
@@ -260,8 +264,10 @@
     .container-header{
         display: flex;
     }
-}
 
-@media screen and (min-width: 1440px) {
-
+    .datas{
+        display: flex;
+        gap: 48px;
+        padding: 64px 120px;
+    }
 }
