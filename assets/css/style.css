@@ -130,6 +130,24 @@
     .datas__textos button img{
         width: 32px;
     }
+
+    /********************** LINE UP ********************************/
+    .lineup{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .lineup__titulo{
+        font-family: var(--fonte-titulos);
+        font-weight: 400;
+        font-size: 48px;
+        color: white;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -256,6 +274,24 @@
     
     .datas__textos button img{
         width: 32px;
+    }
+
+    /********************** LINE UP ********************************/
+    .lineup{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .lineup__titulo{
+        font-family: var(--fonte-titulos);
+        font-weight: 400;
+        font-size: 64px;
+        color: white;
     }
 
 }
