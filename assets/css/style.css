@@ -16,6 +16,14 @@
     display: flex;
 }
 
+/*********************** MAIN ********************************/
+.container-main{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    background: linear-gradient(180deg, #304968 0%, #1bddb1 52.6%, #4650BD 100%);
+}
+
 /*************************************************************
 ---------------------RESPONSIVIDADE---------------------------
 *************************************************************/
@@ -49,15 +57,74 @@
     .banner__titulo{
         position: absolute;
         color: white;
-        font-family: var(--fonte-titulos);
         font-size: 32px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    .banner__titulo p{
+        font-family: var(--fonte-titulos);
+    }
     
     .banner__imagem img{
         width: 100%;
+    }
+
+    .datas{
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .datas img{
+        width: 20rem;
+    }
+
+    .datas__textos h2, p{
+        color: white;
+        font-family: var(--fonte-textos);
+        padding-bottom: 24px;
+    }
+    
+    .datas__textos h2{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 37px;
+    }
+    
+    .datas__textos p{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+
+    .datas__textos button{
+        background-color: #4650BD;
+        padding: 8px 16px;
+        box-shadow: 4px 4px 0px #444444;
+        border-radius: 16px;
+        width: 256px;
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .datas__textos button a{
+        color: white;
+        font-family: var(--fonte-textos);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
+    .datas__textos button img{
+        width: 32px;
     }
 }
 
