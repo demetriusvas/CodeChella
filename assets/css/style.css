@@ -11,10 +11,36 @@
 ---------------------RESPONSIVIDADE---------------------------
 *************************************************************/
 @media screen and (max-width: 767px){
-    
+    header{
+        background-color: #4650BD;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .container-header{
+        display: flex;
+    }
 }
 
 @media screen and (min-width: 768px){
+    header{
+        background-color: #4650BD;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .icone-menu{
+        display: none;
+    }
+    
+    .container-header{
+        display: flex;
+
+    }
 
 }
 
