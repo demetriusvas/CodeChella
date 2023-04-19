@@ -148,6 +148,71 @@
         font-size: 48px;
         color: white;
     }
+
+    /************************ LINE UP - DIA 1 *******************************/
+    .lineup-dia1__data{
+        display: flex;
+        justify-content: center;
+    }
+
+    .lineup-dia1__divider{
+        display: none;
+    }
+
+    .lineup-dia1__data h2{
+        background-color: #008364;
+        color: white;
+        font-size: 32px;
+        font-family: var(--fonte-titulos);
+        padding: 16px;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    .lineup-dia1__bandas div div{
+        margin-bottom: 32px;
+    }
+
+    .lineup-dia1__bandas_1{
+        font-family: var(--fonte-textos);
+        color: white;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .lineup-dia1__bandas_2{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .lineup-dia1__bandas_3{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .lineup-dia1__bandas_4{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 32px;
+        font-weight: 500;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -292,6 +357,79 @@
         font-weight: 400;
         font-size: 64px;
         color: white;
+    }
+
+    /************************ LINE UP - DIA 1 *******************************/
+    .lineup-dia1__data{
+        display: flex;
+        justify-content: center;
+        border: 3px solid red;
+    }
+    
+    .lineup-dia1__divider{
+        margin-top: 5rem;
+        border: none;
+        border: 1px solid #008364;
+        height: 0px;
+        width: 20%;
+    }
+    
+    .lineup-dia1__data h2{
+        background-color: #008364;
+        color: white;
+        font-size: 32px;
+        font-family: var(--fonte-titulos);
+        padding: 16px;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+    
+    .lineup-dia1__bandas div div{
+        margin-bottom: 3px;
+    }
+    
+    .lineup-dia1__bandas_1{
+        font-family: var(--fonte-textos);
+        color: white;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+        border: 3px solid red;
+    }
+    
+    .lineup-dia1__bandas_2{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 40px;
+        font-weight: 700;
+        border: 3px solid red;
+    }
+
+    .lineup-dia1__bandas_3{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .lineup-dia1__bandas_4{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 32px;
+        font-weight: 500;
     }
 
 }
