@@ -289,6 +289,39 @@
         height: 338px;
         mix-blend-mode: multiply;
     }
+
+    /*********************** FOOTER ********************************/
+    footer{
+        background-color: #4650BD;
+        color: white;
+        font-family: var(--fonte-textos);
+        font-weight: 500;
+        line-height: 40px;
+        align-items: center;    
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .container-footer{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 6%;
+        padding-right: 6%;
+        max-width: 1440px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape__links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rodape__links p{
+        font-weight: 500;
+    }
 }
 
 @media screen and (min-width: 768px){
