@@ -278,6 +278,20 @@
         font-size: 32px;
         font-weight: 500;
     }
+
+    /************************BANNER FINAL ********/
+    .banner-final{
+        position: relative;
+    }
+    
+    .banner-final__imagem{
+    }
+    
+    .banner-final__imagem img{
+        width: 100%;
+        height: 338px;
+        mix-blend-mode: multiply;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -584,6 +598,20 @@
         font-weight: 500;
         padding-bottom: 1.5rem;
         margin: 0 3rem;
+    }
+
+    /************************BANNER FINAL ********/
+    .banner-final{
+        position: relative;
+    }
+    
+    .banner-final__imagem{
+    }
+    
+    .banner-final__imagem img{
+        width: 100%;
+        height: 338px;
+        mix-blend-mode: multiply;
     }
 
 }
