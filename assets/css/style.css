@@ -213,6 +213,71 @@
         font-size: 32px;
         font-weight: 500;
     }
+
+    /************************ LINE UP - DIA 2 *******************************/
+    .lineup-dia2__data{
+        display: flex;
+        justify-content: center;
+    }
+
+    .lineup-dia2__divider{
+        display: none;
+    }
+
+    .lineup-dia2__data h2{
+        background-color: #008364;
+        color: white;
+        font-size: 32px;
+        font-family: var(--fonte-titulos);
+        padding: 16px;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    .lineup-dia2__bandas div div{
+        margin-bottom: 32px;
+    }
+
+    .lineup-dia2__bandas_1{
+        font-family: var(--fonte-textos);
+        color: white;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .lineup-dia2__bandas_2{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .lineup-dia2__bandas_3{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .lineup-dia2__bandas_4{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 32px;
+        font-weight: 500;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -440,6 +505,87 @@
         margin: 0 3rem;
     }
 
+    /************************ LINE UP - DIA 2 *******************************/
+    .lineup-dia2__data{
+        display: flex;
+        justify-content: center;
+        /* border: 3px solid red; */
+    }
+    
+    .lineup-dia2__divider{
+        margin-top: 5rem;
+        border: none;
+        border: 1px solid #008364;
+        height: 0px;
+        width: 20%;
+    }
+    
+    .lineup-dia2__data h2{
+        background-color: #008364;
+        color: white;
+        font-size: 32px;
+        font-family: var(--fonte-titulos);
+        padding: 16px;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+    
+    .lineup-dia2__bandas div div{
+        margin-bottom: 3px;
+    }
+    
+    .lineup-dia2__bandas_1{
+        font-family: var(--fonte-textos);
+        color: white;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+        /* border: 3px solid greenyellow; */
+        padding-bottom: 1.5rem;
+        
+    }
+    
+    .lineup-dia2__bandas_2{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 1.5rem;
+        font-size: 40px;
+        font-weight: 700;
+        padding-bottom: 1.5rem;
+    }
+    
+    .lineup-dia2__bandas_3{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 32px;
+        font-weight: 700;
+        padding-bottom: 1.5rem;
+        margin: 0 1rem;
+    }
+
+    .lineup-dia2__bandas_4{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 32px;
+        font-weight: 500;
+        padding-bottom: 1.5rem;
+        margin: 0 3rem;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -451,5 +597,23 @@
         display: flex;
         gap: 48px;
         padding: 64px 120px;
+    }
+
+    .lineup-dia1__data h2{
+        background-color: #008364;
+        color: white;
+        font-size: 48px;
+        font-family: var(--fonte-titulos);
+        padding: 16px;
+        margin: 48px 0;
+    }
+
+    .lineup-dia2__data h2{
+        background-color: #008364;
+        color: white;
+        font-size: 48px;
+        font-family: var(--fonte-titulos);
+        padding: 16px;
+        margin: 48px 0;
     }
 }
