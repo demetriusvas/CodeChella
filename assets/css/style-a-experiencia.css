@@ -1,0 +1,749 @@
+:root{
+    --fonte-titulos: 'Calistoga', cursive;
+    --fonte-textos: 'Raleway', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container-header{
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    display: flex;
+}
+
+/*********************** MAIN ********************************/
+.container-main{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    background: linear-gradient(180deg, #304968 0%, #1bddb1 52.6%, #4650BD 100%);
+}
+
+/*************************************************************
+---------------------RESPONSIVIDADE---------------------------
+*************************************************************/
+@media screen and (max-width: 767px){
+    header{
+        background-color: #4650BD;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .container-header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .banner{
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .banner__imagem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner__titulo{
+        position: absolute;
+        font-size: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .banner__imagem img{
+        width: 100%;
+        height: 270px; 
+        object-fit: cover;
+        object-position: 50% 50%; 
+        mix-blend-mode: hue;
+    }
+
+    .banner__titulo p{
+        font-family: var(--fonte-titulos);
+        color: white;
+    }
+
+    .datas{
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .datas img{
+        width: 20rem;
+    }
+
+    .datas__textos{
+        padding-top: 32px;
+    }
+
+    .datas__textos h2, p{
+        color: white;
+        font-family: var(--fonte-textos);
+        padding-bottom: 24px;
+    }
+    
+    .datas__textos h2{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 10px;
+    }
+    
+    .datas__textos p{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+
+    .datas__textos button{
+        background-color: #4650BD;
+        padding: 8px 16px;
+        box-shadow: 4px 4px 0px #444444;
+        border-radius: 16px;
+        width: 256px;
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .datas__textos button a{
+        color: white;
+        font-family: var(--fonte-textos);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
+    .datas__textos button img{
+        width: 32px;
+    }
+
+    /********************** LINE UP ********************************/
+    .lineup{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .lineup__titulo{
+        font-family: var(--fonte-titulos);
+        font-weight: 400;
+        font-size: 48px;
+        color: white;
+    }
+
+    /************************ LINE UP - DIA 1 *******************************/
+    .lineup-dia1__data{
+        display: flex;
+        justify-content: center;
+    }
+
+    .lineup-dia1__divider{
+        display: none;
+    }
+
+    .lineup-dia1__data h2{
+        background-color: #008364;
+        color: white;
+        font-size: 32px;
+        font-family: var(--fonte-titulos);
+        padding: 16px;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    .lineup-dia1__bandas div div{
+        margin-bottom: 32px;
+    }
+
+    .lineup-dia1__bandas_1{
+        font-family: var(--fonte-textos);
+        color: white;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .lineup-dia1__bandas_2{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .lineup-dia1__bandas_3{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .lineup-dia1__bandas_4{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    /************************ LINE UP - DIA 2 *******************************/
+    .lineup-dia2__data{
+        display: flex;
+        justify-content: center;
+    }
+
+    .lineup-dia2__divider{
+        display: none;
+    }
+
+    .lineup-dia2__data h2{
+        background-color: #008364;
+        color: white;
+        font-size: 32px;
+        font-family: var(--fonte-titulos);
+        padding: 16px;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    .lineup-dia2__bandas div div{
+        margin-bottom: 32px;
+    }
+
+    .lineup-dia2__bandas_1{
+        font-family: var(--fonte-textos);
+        color: white;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .lineup-dia2__bandas_2{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .lineup-dia2__bandas_3{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .lineup-dia2__bandas_4{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    /************************BANNER FINAL ********/
+    .banner-final{
+        position: relative;
+    }
+    
+    .banner-final__imagem img{
+        width: 100%;
+        height: 338px;
+        mix-blend-mode: multiply;
+    }
+
+    /*********************** FOOTER ********************************/
+    footer{
+        background-color: #4650BD;
+        color: white;
+        font-family: var(--fonte-textos);
+        font-weight: 500;
+        line-height: 40px;
+        align-items: center;    
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .container-footer{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 6%;
+        padding-right: 6%;
+        max-width: 1440px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape__links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rodape__links p{
+        font-weight: 500;
+        padding-bottom: 7px;
+    }
+
+    .rodape__texto_final p{
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    header{
+        background-color: #4650BD;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .icone-menu{
+        display: none;
+    }
+    
+    .container-header{
+        display: block;
+        text-align: center;
+    }
+
+    .navbar ul{
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        justify-content: center;
+    }
+    
+    .navbar{
+        align-self: center;
+        margin-left: auto;
+    }
+    
+    nav a{
+        color: white;
+        text-decoration: none;
+        font-family: var(--fonte-textos);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .banner{
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .banner__imagem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner__titulo{
+        position: absolute;
+        color: white;
+        font-family: var(--fonte-titulos);
+        font-size: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner__titulo p{
+        font-family: var(--fonte-titulos);
+    }
+
+    .banner__imagem img{
+        width: 100%;
+        height: 384px;
+        object-fit: cover;
+        object-position: 50% 50%; 
+        mix-blend-mode: hue;
+    }
+
+    .datas{
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    .datas img{
+        width: 40rem;
+    }
+
+    .datas__textos{
+        padding-top: 32px;
+    }
+
+    .datas__textos h2, p{
+        color: white;
+        font-family: var(--fonte-textos);
+        padding-bottom: 24px;
+    }
+    
+    .datas__textos h2{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 10px;
+    }
+    
+    .datas__textos p{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+
+    .datas__textos button{
+        background-color: #4650BD;
+        padding: 8px 16px;
+        box-shadow: 4px 4px 0px #444444;
+        border-radius: 16px;
+        width: 256px;
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .datas__textos button a{
+        color: white;
+        font-family: var(--fonte-textos);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
+    .datas__textos button img{
+        width: 32px;
+    }
+
+    /********************** LINE UP ********************************/
+    .lineup{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .lineup__titulo{
+        font-family: var(--fonte-titulos);
+        font-weight: 400;
+        font-size: 64px;
+        color: white;
+    }
+
+    /************************ LINE UP - DIA 1 *******************************/
+    .lineup-dia1__data{
+        display: flex;
+        justify-content: center;
+        /* border: 3px solid red; */
+    }
+    
+    .lineup-dia1__divider{
+        margin-top: 5rem;
+        border: none;
+        border: 1px solid #008364;
+        height: 0px;
+        width: 20%;
+    }
+    
+    .lineup-dia1__data h2{
+        background-color: #008364;
+        color: white;
+        font-size: 32px;
+        font-family: var(--fonte-titulos);
+        padding: 16px;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+    
+    .lineup-dia1__bandas div div{
+        margin-bottom: 3px;
+    }
+    
+    .lineup-dia1__bandas_1{
+        font-family: var(--fonte-textos);
+        color: white;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+        /* border: 3px solid greenyellow; */
+        padding-bottom: 1.5rem;
+        
+    }
+    
+    .lineup-dia1__bandas_2{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 1.5rem;
+        font-size: 40px;
+        font-weight: 700;
+        padding-bottom: 1.5rem;
+    }
+    
+    .lineup-dia1__bandas_3{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 32px;
+        font-weight: 700;
+        padding-bottom: 1.5rem;
+        margin: 0 1rem;
+    }
+
+    .lineup-dia1__bandas_4{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 32px;
+        font-weight: 500;
+        padding-bottom: 1.5rem;
+        margin: 0 3rem;
+    }
+
+    /************************ LINE UP - DIA 2 *******************************/
+    .lineup-dia2__data{
+        display: flex;
+        justify-content: center;
+        /* border: 3px solid red; */
+    }
+    
+    .lineup-dia2__divider{
+        margin-top: 5rem;
+        border: none;
+        border: 1px solid #008364;
+        height: 0px;
+        width: 20%;
+    }
+    
+    .lineup-dia2__data h2{
+        background-color: #008364;
+        color: white;
+        font-size: 32px;
+        font-family: var(--fonte-titulos);
+        padding: 16px;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+    
+    .lineup-dia2__bandas div div{
+        margin-bottom: 3px;
+    }
+    
+    .lineup-dia2__bandas_1{
+        font-family: var(--fonte-textos);
+        color: white;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+        /* border: 3px solid greenyellow; */
+        padding-bottom: 1.5rem;
+        
+    }
+    
+    .lineup-dia2__bandas_2{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 1.5rem;
+        font-size: 40px;
+        font-weight: 700;
+        padding-bottom: 1.5rem;
+    }
+    
+    .lineup-dia2__bandas_3{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 32px;
+        font-weight: 700;
+        padding-bottom: 1.5rem;
+        margin: 0 1rem;
+    }
+
+    .lineup-dia2__bandas_4{
+        font-family: var(--fonte-textos);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 32px;
+        font-size: 32px;
+        font-weight: 500;
+        padding-bottom: 1.5rem;
+        margin: 0 3rem;
+    }
+
+    /************************BANNER FINAL ********/
+    .banner-final{
+        position: relative;
+    }
+    
+    .banner-final__imagem img{
+        width: 100%;
+        height: 338px;
+        mix-blend-mode: multiply;
+    }
+
+    /*********************** FOOTER ********************************/
+    footer{
+        background-color: #4650BD;
+        color: white;
+        font-family: var(--fonte-textos);
+        font-weight: 500;
+        line-height: 40px;
+        align-items: center;    
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .container-footer{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 6%;
+        padding-right: 6%;
+        max-width: 1440px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape__links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .rodape__links p{
+        font-weight: 500;
+        padding-bottom: 5px;
+    }
+
+    .rodape__texto_final{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .rodape__texto_final p{
+        padding-bottom: 0;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .container-header{
+        display: flex;
+    }
+
+    .banner__imagem img{
+        
+        height: 407px;
+        
+    }
+
+    .datas{
+        display: flex;
+        gap: 48px;
+        padding: 64px 120px;
+    }
+
+    .lineup-dia1__data h2{
+        background-color: #008364;
+        color: white;
+        font-size: 48px;
+        font-family: var(--fonte-titulos);
+        padding: 16px;
+        margin: 48px 0;
+    }
+
+    .lineup-dia2__data h2{
+        background-color: #008364;
+        color: white;
+        font-size: 48px;
+        font-family: var(--fonte-titulos);
+        padding: 16px;
+        margin: 48px 0;
+    }
+
+    .container-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rodape__texto_final{
+        text-align: left;
+    }
+}
