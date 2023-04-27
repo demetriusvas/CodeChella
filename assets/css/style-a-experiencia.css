@@ -125,6 +125,14 @@
         align-items: center;
         padding: 1rem;
     }
+
+    .secao_sustentabilidade__order1{
+        order: 2;
+    }
+
+    .secao_sustentabilidade__order2{
+        order: 1;
+    }
     
     .secao_sustentabilidade img{
         width: 100%;
@@ -528,6 +536,14 @@
         align-items: center;
         padding: 64px 121px;
         gap: 48px;
+    }
+
+    .secao_sustentabilidade__order1{
+        order: 1;
+    }
+
+    .secao_sustentabilidade__order2{
+        order: 2;
     }
     
     .secao_sustentabilidade img{
