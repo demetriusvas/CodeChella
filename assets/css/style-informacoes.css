@@ -28,11 +28,11 @@
 }
 
 .secao_perguntas_escondePergunta{
-    display:none!important;
+    display:none;
 }
 
 .secao_perguntas_mostraPergunta{
-    display:block!important;
+    display:block;
 }
 
 /****************************************************************
@@ -106,8 +106,12 @@
         line-height: 42px;
     }
     
-    /*********************** PERGUNTA 1 ********************************/
-    .secao_perguntas__pergunta1{
+    /******************************** PERGUNTAS ****************************************/
+    .secao_perguntas__pergunta1, 
+    .secao_perguntas__pergunta2, 
+    .secao_perguntas__pergunta3, 
+    .secao_perguntas__pergunta4, 
+    .secao_perguntas__pergunta5{
         padding: 0 24px;
     }
 
@@ -117,12 +121,16 @@
         font-family: var(--fonte-textos);
         font-weight: 700;
         background-color: var(--cor-roxo-boreal);
-        font-size: 32px;
+        font-size: 28px;
         text-align: left;
         padding: 16px;
     }
 
-    .secao_perguntas__pergunta1 p{
+    .secao_perguntas__pergunta1 p,
+    .secao_perguntas__pergunta2 p,
+    .secao_perguntas__pergunta3 p,
+    .secao_perguntas__pergunta4 p,
+    .secao_perguntas__pergunta5 p{
         background-color: var(--cor-azul-claro);
         font-family: var(--fonte-textos);
         font-weight: 500;
@@ -131,29 +139,8 @@
         padding: 16px;
     }
 
-    /*********************** PERGUNTA 2 ********************************/
-    .secao_perguntas__pergunta2{
-        padding: 0 24px;
-    }
-
-    .secao_perguntas_botao{
-        width: 100%;
-        color: white;
-        font-family: var(--fonte-textos);
-        font-weight: 700;
-        background-color: var(--cor-roxo-boreal);
-        font-size: 32px;
-        text-align: left;
-        padding: 16px;
-    }
-
-    .secao_perguntas__pergunta2 p{
-        background-color: var(--cor-azul-claro);
-        font-family: var(--fonte-textos);
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 40px;
-        padding: 16px;
+    .secao_perguntas__pergunta5{
+        padding-bottom: 48px;
     }
 
     /*********************** FOOTER ********************************/
@@ -265,6 +252,57 @@
         mix-blend-mode: color-burn;
     }
 
+    /*********************** PERGUNTAS FREQUENTES *************************/
+    .secao_perguntas__titulo{
+        display: flex;
+        padding: 48px 0px;
+        justify-content: center;
+    }
+    
+    .secao_perguntas__titulo p{
+        font-family: var(--fonte-titulos);
+        color: white;
+        font-size: 48px;
+        line-height: 42px;
+    }
+    
+    /******************************** PERGUNTAS ****************************************/
+    .secao_perguntas__pergunta1, 
+    .secao_perguntas__pergunta2, 
+    .secao_perguntas__pergunta3, 
+    .secao_perguntas__pergunta4, 
+    .secao_perguntas__pergunta5{
+        padding: 0 24px;
+    }
+
+    .secao_perguntas_botao{
+        width: 100%;
+        color: white;
+        font-family: var(--fonte-textos);
+        font-weight: 700;
+        background-color: var(--cor-roxo-boreal);
+        font-size: 32px;
+        text-align: left;
+        padding: 16px;
+    }
+
+    .secao_perguntas__pergunta1 p,
+    .secao_perguntas__pergunta2 p,
+    .secao_perguntas__pergunta3 p,
+    .secao_perguntas__pergunta4 p,
+    .secao_perguntas__pergunta5 p{
+        background-color: var(--cor-azul-claro);
+        font-family: var(--fonte-textos);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 40px;
+        padding: 16px;
+    }
+
+    .secao_perguntas__pergunta5{
+        padding-bottom: 48px;
+    }
+
     
     /*********************** FOOTER ********************************/
     footer{
@@ -326,7 +364,19 @@
         mix-blend-mode: color-burn;
     }
 
-   
+    /********************************* PERGUNTAS ***********************************/
+
+    .secao_perguntas__pergunta1, 
+    .secao_perguntas__pergunta2, 
+    .secao_perguntas__pergunta3, 
+    .secao_perguntas__pergunta4, 
+    .secao_perguntas__pergunta5{
+        padding: 0 222px;
+    }
+
+    .secao_perguntas__pergunta5{
+        padding-bottom: 48px;
+    }
 
     /********************* FOOTER ****************************/
     .container-footer{
