@@ -53,7 +53,24 @@
 
         <!---------------------- CONTAINER ------------------------>
         <div class="container-main">
+            <section class="secao_perguntas__titulo">
+                <p>Perguntas Frequentes:</p>
+            </section>
 
+            <section class="secao_perguntas">
+                <div class="secao_perguntas__pergunta1">
+                    <button onclick="mostraPergunta('pergunta1')" class="secao_perguntas_botao">Quais serão as atrações?</button>
+                    <div id="pergunta1" class="secao_perguntas_escondePergunta">
+                        <p>Teremos dois dias de shows, o primeiro (11/03) com bandas de rock, e o segundo (12/03) com bandas pop. <a href="#">Confira o line-up em detalhes clicando neste link!</a></p>
+                    </div>
+                </div>
+                <div class="secao_perguntas__pergunta2">
+                    <button onclick="mostraPergunta('pergunta2')" class="secao_perguntas_botao">Qual é a classificação etária?</button>
+                    <div id="pergunta2" class="secao_perguntas_escondePergunta">
+                        <p>A partir de 16 anos, todo mundo pode entrar. De 13 a 15 anos, tem que estar acompanhado dos pais ou responsáveis legais. Menores de 10 anos não podem entrar.</p>
+                    </div>
+                </div>
+            </section>
         </div>
 
     </main>
@@ -90,5 +107,16 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function mostraPergunta(id) {
+          var x = document.getElementById(id);
+          if (x.className.indexOf("secao_perguntas_mostraPergunta") == -1) {
+            x.className += " secao_perguntas_mostraPergunta";
+          } else { 
+            x.className = x.className.replace(" secao_perguntas_mostraPergunta", "");
+          }
+        }
+    </script>
 </body>
 </html>

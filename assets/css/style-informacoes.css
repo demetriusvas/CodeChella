@@ -1,6 +1,9 @@
 :root{
     --fonte-titulos: 'Calistoga', cursive;
     --fonte-textos: 'Raleway', sans-serif;
+
+    --cor-roxo-boreal: #4650BD;
+    --cor-azul-claro: #C8DEEF;
 }
 
 *{
@@ -22,6 +25,14 @@
     margin-right: auto;
     max-width: 1440px;
     background: linear-gradient(180deg, #304968 0%, #1bddb1 52.6%, #4650BD 100%);
+}
+
+.secao_perguntas_escondePergunta{
+    display:none!important;
+}
+
+.secao_perguntas_mostraPergunta{
+    display:block!important;
 }
 
 /****************************************************************
@@ -80,7 +91,70 @@
         color: white;
     }
     
+    /*********************** PERGUNTAS FREQUENTES *************************/
+    .secao_perguntas__titulo{
+        display: flex;
+        padding: 24px 48px;
+        text-align: center;
+        
+    }
+    
+    .secao_perguntas__titulo p{
+        font-family: var(--fonte-titulos);
+        color: white;
+        font-size: 32px;
+        line-height: 42px;
+    }
+    
+    /*********************** PERGUNTA 1 ********************************/
+    .secao_perguntas__pergunta1{
+        padding: 0 24px;
+    }
 
+    .secao_perguntas_botao{
+        width: 100%;
+        color: white;
+        font-family: var(--fonte-textos);
+        font-weight: 700;
+        background-color: var(--cor-roxo-boreal);
+        font-size: 32px;
+        text-align: left;
+        padding: 16px;
+    }
+
+    .secao_perguntas__pergunta1 p{
+        background-color: var(--cor-azul-claro);
+        font-family: var(--fonte-textos);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 40px;
+        padding: 16px;
+    }
+
+    /*********************** PERGUNTA 2 ********************************/
+    .secao_perguntas__pergunta2{
+        padding: 0 24px;
+    }
+
+    .secao_perguntas_botao{
+        width: 100%;
+        color: white;
+        font-family: var(--fonte-textos);
+        font-weight: 700;
+        background-color: var(--cor-roxo-boreal);
+        font-size: 32px;
+        text-align: left;
+        padding: 16px;
+    }
+
+    .secao_perguntas__pergunta2 p{
+        background-color: var(--cor-azul-claro);
+        font-family: var(--fonte-textos);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 40px;
+        padding: 16px;
+    }
 
     /*********************** FOOTER ********************************/
     footer{
