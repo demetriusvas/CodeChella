@@ -1,0 +1,413 @@
+:root{
+    --fonte-titulos: 'Calistoga', cursive;
+    --fonte-textos: 'Raleway', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container-header{
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    display: flex;
+}
+
+/*********************** MAIN ********************************/
+.container-main{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    background: linear-gradient(180deg, #304968 0%, #1bddb1 52.6%, #4650BD 100%);
+}
+
+/****************************************************************
+-----------------------------------------------------------------
+---------------------RESPONSIVIDADE------------------------------
+-----------------------------------------------------------------
+****************************************************************/
+@media screen and (max-width: 767px){
+    header{
+        background-color: #4650BD;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .container-header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    /*************************** BANNER ************************/
+    .banner{
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    
+    .banner__imagem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banner__titulo{
+        position: absolute;
+        font-size: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .banner__imagem img{
+        width: 100%;
+        height: 270px; 
+        object-fit: cover;
+        object-position: 50% 50%; 
+        mix-blend-mode: hue;
+    }
+    
+    .banner__titulo p{
+        font-family: var(--fonte-titulos);
+        color: white;
+    }
+
+    /*********************** TITULO SECUNDARIO*************************/
+    .secao_titulo_secundario{
+        display: flex;
+        padding: 32px 24px;
+        text-align: center;   
+    }
+    
+    .secao_titulo_secundario p{
+        font-family: var(--fonte-titulos);
+        color: white;
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+
+    
+    /*********************** CARD INGRESSO ********************************/
+    .secao_card_ingressso{
+        background: linear-gradient(180deg, #304968 0%, #1bddb1 52.6%, #4650BD 100%);
+        margin: 0 24px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .card_ingresso__titulo{
+        display: flex;
+        justify-content: space-between;
+        padding: 32px;
+    }
+
+    .card_ingresso__informacoes{
+        display: block;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+    
+    .card_ingresso__qr-code img{
+        width: 189px;
+        margin-bottom: 16px;
+    }
+
+    .card_ingresso__nome, .card_ingresso__dado-separado{
+        color: white;
+        font-family: var(--fonte-textos);
+        line-height: 40px;
+    }
+
+    .card_ingresso__nome{
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    .card_ingresso__dado-separado{
+        font-weight: 500;
+        font-size: 20px;
+    }
+    
+    
+    /*********************** FOOTER ********************************/
+    footer{
+        background-color: #4650BD;
+        color: white;
+        font-family: var(--fonte-textos);
+        font-weight: 500;
+        line-height: 40px;
+        align-items: center;    
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .container-footer{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 6%;
+        padding-right: 6%;
+        max-width: 1440px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .rodape__links{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .rodape__links p{
+        font-weight: 500;
+        padding-bottom: 7px;
+    }
+
+    .rodape__texto_final p{
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    header{
+        background-color: #4650BD;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .icone-menu{
+        display: none;
+    }
+    
+    .container-header{
+        display: block;
+        text-align: center;
+    }
+    
+    .navbar ul{
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        justify-content: center;
+    }
+    
+    .navbar{
+        align-self: center;
+        margin-left: auto;
+    }
+    
+    nav a{
+        color: white;
+        text-decoration: none;
+        font-family: var(--fonte-textos);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 40px;
+    }
+    /************************ BANNER ***************************/
+    .banner{
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    
+    .banner__imagem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banner__titulo{
+        position: absolute;
+        color: white;
+        font-family: var(--fonte-titulos);
+        font-size: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .banner__titulo p{
+        font-family: var(--fonte-titulos);
+    }
+    
+    .banner__imagem img{
+        width: 100%;
+        height: 384px;
+        object-fit: cover;
+        object-position: 50% 50%; 
+        mix-blend-mode: hue;
+    }
+    
+    /*********************** TITULO SECUNDARIO *************************/
+    .secao_titulo_secundario{
+        display: flex;
+        padding: 32px 50px;
+        text-align: center;
+    }
+    
+    .secao_titulo_secundario p{
+        font-family: var(--fonte-titulos);
+        color: white;
+        font-size: 48px;
+        line-height: 42px;
+    }
+    
+    /********************** CARD INGRESSO **********************/
+    
+    
+    .secao_card_ingressso{
+        background: linear-gradient(180deg, #304968 0%, #1bddb1 52.6%, #4650BD 100%);
+        margin: 0 60px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .card_ingresso__titulo{
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+    }
+
+    .card_ingresso__informacoes{
+        display: block;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+    
+    .card_ingresso__qr-code img{
+        width: 189px;
+        margin-bottom: 16px;
+    }
+
+    .card_ingresso__nome, .card_ingresso__dado-separado{
+        color: white;
+        font-family: var(--fonte-textos);
+        line-height: 40px;
+    }
+
+    .card_ingresso__nome{
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    .card_ingresso__dado-separado{
+        font-weight: 500;
+        font-size: 20px;
+    }
+    
+    
+    
+    
+    /*********************** FOOTER ********************************/
+    footer{
+        background-color: #4650BD;
+        color: white;
+        font-family: var(--fonte-textos);
+        font-weight: 500;
+        line-height: 40px;
+        align-items: center;    
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .container-footer{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 6%;
+        padding-right: 6%;
+        max-width: 1440px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .rodape__links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .rodape__links p{
+        font-weight: 500;
+        padding-bottom: 5px;
+    }
+    
+    .rodape__texto_final{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    .rodape__texto_final p{
+        padding-bottom: 0;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .container-header{
+        display: flex;
+    }
+
+    .banner__imagem img{        
+        height: 407px;
+    }
+    
+    /*********************** TITULO SECUNDARIO *************************/
+    .secao_titulo_secundario{
+        display: flex;
+        padding: 48px 322px;
+        text-align: center;
+        
+    }
+    
+    .secao_titulo_secundario p{
+        font-family: var(--fonte-titulos);
+        color: white;
+        font-size: 48px;
+        line-height: 42px;
+    }
+    
+    /*********************** CARD INGRESSO ********************************/
+    .secao_card_ingressso{
+        margin: 0 324px;
+        padding: 32px;
+    }
+
+    .card_ingresso__titulo{
+        margin: 0px;
+    }
+    
+    .card_ingresso__informacoes{
+        display: flex;
+        text-align: left;
+        gap: 48px;
+        padding-bottom: 0;
+    }
+
+    .card_ingresso__qr-code img{
+        margin-bottom: 0px;
+    }
+    
+    
+    /*********************** FOOTER ********************************/
+    .container-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .rodape__texto_final{
+        text-align: left;
+    }
+}
